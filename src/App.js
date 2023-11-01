@@ -1,6 +1,6 @@
-import React, from 'react';
+import React from 'react';
 import EightBall from './EightBall';
-import './App.css';
+import './Eightball.css';
 
 
 function App() {

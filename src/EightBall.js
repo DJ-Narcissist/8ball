@@ -1,4 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+import "./Eightball.css";
+import { choice } from "./random"
 
 const EightBall = () => {
     const [answer, setAnswer] = useState("Think of a question");
@@ -36,12 +38,10 @@ const EightBall = () => {
         return (
             <div 
                 className="EightBall"
-                style={{ backgroundColor: color}}
+                style={{backgroundColor: answer.color}}
                 onClick={handleClick}
             >
-                <p>
-                    {answer}
-                </p>
+                <b> {answer.msg}</b>
             </div>
         );
     };
