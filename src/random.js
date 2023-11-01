@@ -1,4 +1,3 @@
-import React from "react";
 
 const choice = (arr) => {
     let randomIndex = Math.floor(Math.random() * arr.length);
@@ -7,4 +6,3 @@ const choice = (arr) => {
   
   export { choice };
 
-export default { choice };
